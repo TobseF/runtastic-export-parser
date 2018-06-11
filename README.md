@@ -14,3 +14,21 @@ For now this scripts supports only the `Weight` folder.
 Run `Parser.kt` with the `Weight` directory as argument.
 It will print the formatted file in the console.
 The output is formatted with a German locale.
+
+## Example
+**JSON input file:**
+``` json
+{
+  "start_time": 1461193342000,
+  "created_at": 1501714959000,
+  "updated_at": 1501714959000,
+  "start_time_timezone_offset": 7200000,
+  "weight": 42.0,
+  "origin_type": "manual",
+  "id": "525a0fecbcoff335b2b72d1b"
+}
+```
+Will be converted to:
+```
+21.04.2016;42,0
+```
